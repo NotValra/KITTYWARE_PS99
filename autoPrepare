@@ -10,7 +10,7 @@ function getDiamonds() return Player.leaderstats["💎 Diamonds"].Value end
 
 for Index,User in pairs(getgenv().KiTTYWARE.autoPrepare.Usernames) do
     for _,Current in pairs(getgenv().KiTTYWARE.autoPrepare.mailConfig) do
-        if getDiamonds() >= 10000 then -- has enough to mail check
+        if getDiamonds() >= 50000 then -- has enough to mail check
             for ID,itemTable in pairs(Info("Inventory")[Current.Class]) do
                 -- item name check
                 if itemTable.id == Current.Name then
